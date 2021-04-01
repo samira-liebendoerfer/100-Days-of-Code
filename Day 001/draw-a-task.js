@@ -30,6 +30,7 @@ let myTasks = [
 // FUNCTION TO SHOW A TASK
 function showTask() {
   // PICK A RANDOM TASK FROM THE LIST
+  // Return a random index to the array of tasks with math.random()
   let task = myTasks[Math.floor(Math.random() * myTasks.length)];
   console.log("task: ", task);
 
