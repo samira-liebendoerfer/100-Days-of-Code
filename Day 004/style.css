@@ -1,0 +1,36 @@
+body {
+  height: 200vh;
+  width: 100%;
+  margin: 0;
+}
+.page-header {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.trigger-menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  z-index: 2;
+  background: black;
+  transition: transform 0.4s;
+}
+.nav-title {
+  font-family: sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.scroll-down .trigger-menu-wrapper {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .trigger-menu-wrapper {
+  transform: none;
+}
